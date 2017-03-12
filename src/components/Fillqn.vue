@@ -1,5 +1,5 @@
 <template>
-  <div class="new-qn" v-if="fillQns">
+  <div class="fill-qn" v-if="fillQns">
     <h2 class="title">{{fillqns.title}}</h2>
     <hr>
     <div class="qnlist">
@@ -11,8 +11,7 @@
   </div>
 </template>
 <script>
-  export default{
-    name: 'Fillqn'
-  }
-
+export default{
+  name: 'fill-qn'
+}
 </script>

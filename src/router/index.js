@@ -25,8 +25,8 @@ export default new Router({
       component: List
     },
     {
-      path: '/fillqn',
-      name: 'fillqn',
+      path: '/fill-qn',
+      name: 'fill-qn',
       component: Fillqn
     }
   ]

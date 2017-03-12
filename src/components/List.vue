@@ -1,6 +1,5 @@
 <template>
 <div class="list">
-  <h1>我的问卷列表</h1>
   <table>
     <thead>
     <tr>
@@ -25,6 +24,37 @@
 export default {
   name: 'list'
 }
-
 </script>
+<style>
+  table {
+    width: 60%;
+    margin: 10% auto;
+    background: #fff;
+    border: 2px solid #42b983;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 1.5;
+  }
+  th {
+    height: 50px;
+    color: #fff;
+    background: #42b983;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .title {
+    font-size: 20px;
+    width: 30%;
+  }
+  .time {
+    width: 20%;
+  }
+  .status {
+    width: 10%;
+  }
+  .handle {
+    width: 40%;
+  }
+
+</style>
 
