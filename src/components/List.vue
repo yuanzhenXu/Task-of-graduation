@@ -50,7 +50,7 @@ export default {
     width: 20%;
   }
   .status {
-    width: 10%;
+    width: 20%;
   }
   .handle {
     width: 40%;

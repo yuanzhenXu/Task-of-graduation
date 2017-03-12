@@ -5,17 +5,17 @@
   <div>
     <!--<ul>-->
       <!--<li>-->
-        <!--&lt;!&ndash;<input type="text" class="type">&ndash;&gt;-->
-        <!--&lt;!&ndash;<input type="text" class="options">&ndash;&gt;-->
+        <!--<input type="text" class="type">-->
+        <!--<input type="text" class="options">-->
       <!--</li>-->
 
     <!--</ul>-->
   </div>
   <div>
-    <button>删除</button>
-    <button>复用</button>
-    <button>上移</button>
-    <button>下移</button>
+    <button >删除</button>
+    <button >复用</button>
+    <button >上移</button>
+    <button >下移</button>
   </div>
   <section>
     <div class="radio">单选</div>
@@ -29,19 +29,23 @@
   <footer>
     <div class="deadline">
       <span>截止日期： </span>
-      <!--<date-picker></date-picker>-->
+      <date-picker :date="date" :option="option" :limit="limit"></date-picker>
     </div>
-    <a class="btns">
+    <a class="btns" v-on="saveQns">
       <span>保存问卷</span>
     </a>
   </footer>
-  <!--<my-alert :alert-message="altertmessage"></my-alert>-->
+  <my-alert :alert-message="alertMessage" ref="myAlert"></my-alert>
 </div>
 </template>
 <script>
-export default {
-  name: 'new-qn'
-}
+//  import DatePicker from 'vue-datepicker'
+  export default {
+    name: 'new-qn'
+//    components: {
+//      'date-picker': DatePicker
+//    }
+  }
 
 </script>
 <style>
